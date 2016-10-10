@@ -29,6 +29,9 @@ class CollectionViewCell: UICollectionViewCell {
     private func commonInit() {
         
         imageView = UIImageView()
+        
+        print("\n\nimageView: \(imageView)\n\n")
+        
         imageView.contentMode = .scaleToFill
         self.contentView.addSubview(imageView)
         
@@ -37,6 +40,8 @@ class CollectionViewCell: UICollectionViewCell {
         imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor).isActive = true
         imageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor).isActive = true
         imageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor).isActive = true
+        
+        print("\n\nimageView frame: \(imageView)\n\n")
         
     }
     
